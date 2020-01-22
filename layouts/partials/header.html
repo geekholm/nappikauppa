@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='shortcut icon' type='image/x-icon' href='/images/icons/favicon.ico' />
+
+  {{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <script src="https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.js"></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.css" />
+  <div id="snipcart" data-api-key="N2M3NzJlYTgtZjRjOS00YjViLThkM2QtZjAxNmQ3MTRkYWM1NjM3MTUxOTU3MTM1MjUwNjUz" hidden></div>
+  
+
+
+  <title>Nappikauppa</title>
+</head>
+<body>
+
+  {{ partial "nav.html" . }}

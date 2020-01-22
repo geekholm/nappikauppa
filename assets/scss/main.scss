@@ -1,0 +1,36 @@
+@import '_product';
+@import '_nav';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    stroke: 0;
+    line-height: 1;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+  
+  code {
+    font-family:
+      source-code-pro,
+      Menlo,
+      Monaco,
+      Consolas,
+      'Courier New',
+      monospace;
+  }

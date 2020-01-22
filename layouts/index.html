@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+
+<div class="products">
+  {{ range .Site.Data.products }}
+    {{ partial "product.html" . }}
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
